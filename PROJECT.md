@@ -73,14 +73,16 @@ General attributes that can apply to nearly any issue or pull request.
 
 Area or component of the project affected. Please note that the table below may not be inclusive of all current options.
 
+<!-- UPDATE THE AREA TO MATCH PR LABLER -->
+
 | Label               | Applies to | Description            |
 | ------------------- | ---------- | ---------------------- |
-| `area/hack`         | Any        | Project hack/support   |
 | `area/ci`           | Any        | Continuous integration |
-| `area/performance`  | Any        | Project performance    |
-| `area/gha`          | Any        | GitHub actions         |
-| `area/project`      | Any        | Project support        |
 | `area/dependencies` | Any        | Project dependencies   |
+| `area/gha`          | Any        | GitHub actions         |
+| `area/hack`         | Any        | Project hack/support   |
+| `area/performance`  | Any        | Project performance    |
+| `area/project`      | Any        | Project support        |
 
 ### `exp/`
 
@@ -107,17 +109,17 @@ The type of issue, pull request or discussion
 
 | Label              | Applies to        | Description                                             |
 | ------------------ | ----------------- | ------------------------------------------------------- |
-| `kind/enhancement` | Any               | Enhancement of an existing feature                      |
-| `kind/feature`     | Any               | A brand new feature                                     |
-| `kind/duplicate`   | Any               | Duplicate of another item                               |
-| `kind/support`     | Any               | A question, discussion, or other user support item      |
-| `kind/proposal`    | Issue, Discussion | A proposed major change                                 |
 | `kind/bug`         | Issue, PR         | Confirmed bug                                           |
 | `kind/chore`       | Issue, PR         | Project support tasks                                   |
-| `kind/tests`       | Issue, PR         | Additions or modifications to the project testing suite |
 | `kind/docs`        | Issue, PR         | Additions or modifications to the documentation         |
+| `kind/duplicate`   | Any               | Duplicate of another item                               |
+| `kind/enhancement` | Any               | Enhancement of an existing feature                      |
+| `kind/feature`     | Any               | A brand new feature                                     |
 | `kind/maybe-bug`   | Issue, PR         | Unconfirmed bug, turns into kind/bug when confirmed     |
+| `kind/proposal`    | Issue, Discussion | A proposed major change                                 |
 | `kind/refactor`    | Issue, PR         | Refactor of existing code                               |
+| `kind/support`     | Any               | A question, discussion, or other user support item      |
+| `kind/tests`       | Issue, PR         | Additions or modifications to the project testing suite |
 
 ### `needs/`
 
@@ -125,20 +127,21 @@ Actions or missing requirements needed by the issue or pull request.
 
 | Label                       | Applies to | Description                                           |
 | --------------------------- | ---------- | ----------------------------------------------------- |
-| `needs/priority`            | Issue, PR  | Needs priority assignment                             |
-| `needs/milestone`           | Issue, PR  | Needs milestone assignment                            |
-| `needs/docs-update`         | Issue, PR  | Needs an update to the docs                           |
-| `needs/follow-on-work`      | Issue, PR  | Needs follow-on work/PR                               |
-| `needs/code-review`         | PR         | Needs review of code                                  |
 | `needs/assignee`            | Issue, PR  | Needs an assignee                                     |
+| `needs/code-review`         | PR         | Needs review of code                                  |
 | `needs/design-review`       | Issue, PR  | Needs review of design                                |
 | `needs/docs-review`         | Issue, PR  | Needs review by the documentation team                |
-| `needs/more-info`           | Any        | Needs more information from the author                |
+| `needs/docs-update`         | Issue, PR  | Needs an update to the docs                           |
+| `needs/follow-on-work`      | Issue, PR  | Needs follow-on work/PR                               |
+| `needs/issue`               | PR         | Needs an issue                                        | 
 | `needs/maintainer-decision` | Issue, PR  | Needs maintainer discussion/decision before advancing |
+| `needs/milestone`           | Issue, PR  | Needs milestone assignment                            |
+| `needs/more-info`           | Any        | Needs more information from the author                |
 | `needs/more-investigation`  | Issue, PR  | Needs further investigation                           |
+| `needs/priority`            | Issue, PR  | Needs priority assignment                             |
+| `needs/pull-request`        | Issue      | Needs a pull request                                  |
 | `needs/rebase`              | PR         | Needs rebase to target branch                         |
 | `needs/reproduction`        | Issue, PR  | Needs reproduction steps                              |
-| `needs/pull-request`        | Issue      | Needs a pull request                                  |
 
 ### `priority/`
 
@@ -156,11 +159,11 @@ Current lifecycle state of the issue or pull request.
 
 | Label                 | Applies to | Description                                                            |
 | --------------------- | ---------- | ---------------------------------------------------------------------- |
-| `status/transfer`     | Any        | Transferred to another project                                         |
 | `status/accepted`     | Issue      | The issue has been reviewed and accepted for implementation            |
-| `status/do-not-merge` | PR         | Should not be merged pending further review or changes                 |
 | `status/active`       | PR         | The PR is actively being worked on by a maintainer or community member |
 | `status/blocked`      | Issue, PR  | The issue/PR is blocked from advancing to another status               |
+| `status/do-not-merge` | PR         | Should not be merged pending further review or changes                 |
+| `status/transfer`     | Any        | Transferred to another project                                         |
 | `status/wontfix`      | Issue, PR  | The issue/PR will not be fixed or addressed as described               |
 
 ### `triage/`
@@ -169,10 +172,10 @@ The triage state of the issue
 
 | Label                 | Applies to | Description                                            |
 | --------------------- | ---------- | ------------------------------------------------------ |
-| `triage/needs-triage` | Issue      | Issue needs to be categorized by maintainers           |
 | `triage/blocked`      | Issue      | Item is unable to be sorted until roadblock is cleared |
-| `triage/needs-info`   | Issue      | Item needs more information                            |
 | `triage/duplicate`    | Issue      | Item is a duplicate of a previous issue/PR             |
+| `triage/needs-info`   | Issue      | Item needs more information                            |
+| `triage/needs-triage` | Issue      | Issue needs to be categorized by maintainers           |
 
 ## Types of releases
 
